@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02E893601C03184E003346EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E8935F1C03184E003346EC /* main.m */; };
+		02E893631C03184E003346EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E893621C03184E003346EC /* AppDelegate.m */; };
+		02E893661C03184E003346EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E893651C03184E003346EC /* ViewController.m */; };
+		02E893691C03184E003346EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E893671C03184E003346EC /* Main.storyboard */; };
+		02E8936B1C03184E003346EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E8936A1C03184E003346EC /* Images.xcassets */; };
+		02E8936E1C03184E003346EC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02E8936C1C03184E003346EC /* LaunchScreen.xib */; };
+		02E8937A1C03184E003346EC /* ZYGNetworkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E893791C03184E003346EC /* ZYGNetworkingTests.m */; };
+		02E893861C031C36003346EC /* ZYGNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E893851C031C36003346EC /* ZYGNetwork.m */; };
+		FE2281E45287CF94BE1C61A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AD5CF594C5AAC1AF82085E /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02E893741C03184E003346EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02E893521C03184E003346EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02E893591C03184E003346EC;
+			remoteInfo = ZYGNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02E8935A1C03184E003346EC /* ZYGNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYGNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E8935E1C03184E003346EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E8935F1C03184E003346EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		02E893611C03184E003346EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		02E893621C03184E003346EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		02E893641C03184E003346EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		02E893651C03184E003346EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		02E893681C03184E003346EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02E8936A1C03184E003346EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		02E8936D1C03184E003346EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		02E893731C03184E003346EC /* ZYGNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYGNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E893781C03184E003346EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E893791C03184E003346EC /* ZYGNetworkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYGNetworkingTests.m; sourceTree = "<group>"; };
+		02E893841C031C36003346EC /* ZYGNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYGNetwork.h; sourceTree = "<group>"; };
+		02E893851C031C36003346EC /* ZYGNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYGNetwork.m; sourceTree = "<group>"; };
+		02E893BD1C0329FA003346EC /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		02E893BF1C032A0E003346EC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		02E893C11C032A1F003346EC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		37AD5CF594C5AAC1AF82085E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7610B5C480FC208A5D0865E4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CF9324100246045511C7CBB5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02E893571C03184E003346EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2281E45287CF94BE1C61A7 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E893701C03184E003346EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02E893511C03184E003346EC = {
+			isa = PBXGroup;
+			children = (
+				02E8935C1C03184E003346EC /* ZYGNetworking */,
+				02E893761C03184E003346EC /* ZYGNetworkingTests */,
+				02E8935B1C03184E003346EC /* Products */,
+				19D9FFE56B841BA2A70B0CBC /* Pods */,
+				2F2B027C47D29DB9CD8004E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		02E8935B1C03184E003346EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02E8935A1C03184E003346EC /* ZYGNetworking.app */,
+				02E893731C03184E003346EC /* ZYGNetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02E8935C1C03184E003346EC /* ZYGNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				02E893831C031887003346EC /* ZYGNetwork */,
+				02E893611C03184E003346EC /* AppDelegate.h */,
+				02E893621C03184E003346EC /* AppDelegate.m */,
+				02E893641C03184E003346EC /* ViewController.h */,
+				02E893651C03184E003346EC /* ViewController.m */,
+				02E893671C03184E003346EC /* Main.storyboard */,
+				02E8936A1C03184E003346EC /* Images.xcassets */,
+				02E8936C1C03184E003346EC /* LaunchScreen.xib */,
+				02E8935D1C03184E003346EC /* Supporting Files */,
+			);
+			path = ZYGNetworking;
+			sourceTree = "<group>";
+		};
+		02E8935D1C03184E003346EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02E8935E1C03184E003346EC /* Info.plist */,
+				02E8935F1C03184E003346EC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02E893761C03184E003346EC /* ZYGNetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				02E893791C03184E003346EC /* ZYGNetworkingTests.m */,
+				02E893771C03184E003346EC /* Supporting Files */,
+			);
+			path = ZYGNetworkingTests;
+			sourceTree = "<group>";
+		};
+		02E893771C03184E003346EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02E893781C03184E003346EC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02E893831C031887003346EC /* ZYGNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				02E893841C031C36003346EC /* ZYGNetwork.h */,
+				02E893851C031C36003346EC /* ZYGNetwork.m */,
+			);
+			path = ZYGNetwork;
+			sourceTree = "<group>";
+		};
+		19D9FFE56B841BA2A70B0CBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7610B5C480FC208A5D0865E4 /* Pods.debug.xcconfig */,
+				CF9324100246045511C7CBB5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2F2B027C47D29DB9CD8004E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02E893C11C032A1F003346EC /* SystemConfiguration.framework */,
+				02E893BF1C032A0E003346EC /* MobileCoreServices.framework */,
+				02E893BD1C0329FA003346EC /* libz.1.2.5.dylib */,
+				37AD5CF594C5AAC1AF82085E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02E893591C03184E003346EC /* ZYGNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02E8937D1C03184E003346EC /* Build configuration list for PBXNativeTarget "ZYGNetworking" */;
+			buildPhases = (
+				F49AAF183F976C878344FD8D /* Check Pods Manifest.lock */,
+				02E893561C03184E003346EC /* Sources */,
+				02E893571C03184E003346EC /* Frameworks */,
+				02E893581C03184E003346EC /* Resources */,
+				6A5852A3C57B8845D97D6EA3 /* Embed Pods Frameworks */,
+				6A6F8333C19C639BEEEB35F7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYGNetworking;
+			productName = ZYGNetworking;
+			productReference = 02E8935A1C03184E003346EC /* ZYGNetworking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02E893721C03184E003346EC /* ZYGNetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02E893801C03184E003346EC /* Build configuration list for PBXNativeTarget "ZYGNetworkingTests" */;
+			buildPhases = (
+				02E8936F1C03184E003346EC /* Sources */,
+				02E893701C03184E003346EC /* Frameworks */,
+				02E893711C03184E003346EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02E893751C03184E003346EC /* PBXTargetDependency */,
+			);
+			name = ZYGNetworkingTests;
+			productName = ZYGNetworkingTests;
+			productReference = 02E893731C03184E003346EC /* ZYGNetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02E893521C03184E003346EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = ZhangYungaung;
+				TargetAttributes = {
+					02E893591C03184E003346EC = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					02E893721C03184E003346EC = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 02E893591C03184E003346EC;
+					};
+				};
+			};
+			buildConfigurationList = 02E893551C03184E003346EC /* Build configuration list for PBXProject "ZYGNetworking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02E893511C03184E003346EC;
+			productRefGroup = 02E8935B1C03184E003346EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02E893591C03184E003346EC /* ZYGNetworking */,
+				02E893721C03184E003346EC /* ZYGNetworkingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02E893581C03184E003346EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E893691C03184E003346EC /* Main.storyboard in Resources */,
+				02E8936E1C03184E003346EC /* LaunchScreen.xib in Resources */,
+				02E8936B1C03184E003346EC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E893711C03184E003346EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A5852A3C57B8845D97D6EA3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A6F8333C19C639BEEEB35F7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F49AAF183F976C878344FD8D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02E893561C03184E003346EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E893661C03184E003346EC /* ViewController.m in Sources */,
+				02E893631C03184E003346EC /* AppDelegate.m in Sources */,
+				02E893601C03184E003346EC /* main.m in Sources */,
+				02E893861C031C36003346EC /* ZYGNetwork.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E8936F1C03184E003346EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E8937A1C03184E003346EC /* ZYGNetworkingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02E893751C03184E003346EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02E893591C03184E003346EC /* ZYGNetworking */;
+			targetProxy = 02E893741C03184E003346EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02E893671C03184E003346EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02E893681C03184E003346EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02E8936C1C03184E003346EC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02E8936D1C03184E003346EC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02E8937B1C03184E003346EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		02E8937C1C03184E003346EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02E8937E1C03184E003346EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7610B5C480FC208A5D0865E4 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: feng wang (EY83KCW754)";
+				INFOPLIST_FILE = ZYGNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6264fd23-7faf-4eb5-baf7-f68d461213cc";
+			};
+			name = Debug;
+		};
+		02E8937F1C03184E003346EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF9324100246045511C7CBB5 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				INFOPLIST_FILE = ZYGNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6264fd23-7faf-4eb5-baf7-f68d461213cc";
+			};
+			name = Release;
+		};
+		02E893811C03184E003346EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZYGNetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYGNetworking.app/ZYGNetworking";
+			};
+			name = Debug;
+		};
+		02E893821C03184E003346EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZYGNetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYGNetworking.app/ZYGNetworking";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02E893551C03184E003346EC /* Build configuration list for PBXProject "ZYGNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E8937B1C03184E003346EC /* Debug */,
+				02E8937C1C03184E003346EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02E8937D1C03184E003346EC /* Build configuration list for PBXNativeTarget "ZYGNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E8937E1C03184E003346EC /* Debug */,
+				02E8937F1C03184E003346EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02E893801C03184E003346EC /* Build configuration list for PBXNativeTarget "ZYGNetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E893811C03184E003346EC /* Debug */,
+				02E893821C03184E003346EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02E893521C03184E003346EC /* Project object */;
+}
